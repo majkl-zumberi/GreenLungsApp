@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageHeader"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/signup"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/header_layer"
+        app:layout_constraintBottom_toBottomOf="@id/imageHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/imageHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/green_lungs"
+            android:textColor="@color/colorSplashScreen"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/respira_meglio"
+            android:textColor="@color/colorSplashScreen"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewSupporter"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageHeader"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/login_background"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewSupporter">
+
+        <TextView
+            android:id="@+id/textWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="@string/welcome_signup"
+            android:textColor="@color/colorTextPrimaryLogin"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:paddingStart="60dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/colorTextPrimaryLogin"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/textWelcome"/>
+
+        <View
+            android:id="@+id/viewDividerForEmail"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorTextHintLogin"
+            app:layout_constraintTop_toBottomOf="@id/inputEmail"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_email"
+            android:tint="@color/colorTextHintLogin"
+            app:layout_constraintBottom_toBottomOf="@id/inputEmail"
+            app:layout_constraintStart_toStartOf="@id/inputEmail"/>
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:hint="@string/password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:paddingStart="60dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/colorTextPrimaryLogin"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/viewDividerForEmail"
+            tools:ignore="Autofill"/>
+
+        <View
+            android:id="@+id/viewDividerForPassword"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorTextHintLogin"
+            app:layout_constraintTop_toBottomOf="@id/inputPassword"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_lock"
+            android:tint="@color/colorTextHintLogin"
+            app:layout_constraintBottom_toBottomOf="@id/inputPassword"
+            app:layout_constraintStart_toStartOf="@id/inputPassword"/>
+
+        <EditText
+            android:id="@+id/inputPasswordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:hint="@string/password_confirm"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingStart="60dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/colorTextPrimaryLogin"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/viewDividerForPassword"
+            tools:ignore="Autofill"/>
+
+        <View
+            android:id="@+id/viewDividerForPasswordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorTextHintLogin"
+            app:layout_constraintTop_toBottomOf="@id/inputPasswordConfirm"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_lock"
+            android:tint="@color/colorTextHintLogin"
+            app:layout_constraintBottom_toBottomOf="@id/inputPasswordConfirm"
+            app:layout_constraintStart_toStartOf="@id/inputPasswordConfirm"/>
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/primary_button_background"
+            android:text="@string/crea_account"
+            android:textAllCaps="false"
+            android:textColor="@color/colorSplashScreen"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/viewDividerForPasswordConfirm"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#31b78a</color>
+    <color name="colorPrimaryDark">#31b78a</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorSplashScreen">#FFFFFF</color>
+    <color name="colorPrimaryLogin">#31b78a</color>
+    <color name="colorPrimaryDarkLogin">#31b78a</color>
+    <color name="colorAccentLogin">#F13413</color>
+    <color name="colorTextPrimaryLogin">#212121</color>
+    <color name="colorLayerDarkLogin">#D6000000</color>
+    <color name="colorLayerSemiDarkLogin">#60000000</color>
+    <color name="colorTextHintLogin">#808080</color>
+    <color name="colorBackground">#ECECEC</color>
+    <color name="colorSemiDarkDashboard">#90000000</color>
+</resources>

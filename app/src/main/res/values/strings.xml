@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Green Lungs</string>
+    <string name="salta_intro">SALTA INTRO</string>
+    <string name="avanti">Avanti</string>
+    <string name="green_lungs">Green Lungs</string>
+    <string name="respira_meglio">respira meglio</string>
+    <string name="welcome">Benvenuto</string>
+    <string name="welcome_signup">Crea un nuovo Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Conferma password</string>
+    <string name="login">Accedi</string>
+    <string name="forgotPassword">Password dimenticata?</string>
+    <string name="crea_account">Crea Account</string>
+    <string name="home">Home</string>
+    <string name="impostazioni">impostazioni</string>
+    <string name="TextGreeting">Ciao, Green Breather!</string>
+    <string name="stato_filtro_pm10"><![CDATA[Filtro & PM10]]></string>
+    <string name="statistica_pm">Stats PM10</string>
+    <string name="desc_project">Green Lungs ?</string>
+    <string name="account">Account</string>
+</resources>
